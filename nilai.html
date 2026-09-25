@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Siswa RPL - Nilai</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body class="bg-slate-100 text-slate-800">
+
+<header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4
+                flex items-center justify-between">
+
+        <a href="index.html" class="flex items-center gap-3">
+
+            <div class="w-11 h-11 rounded-xl bg-blue-600
+                        text-white flex items-center
+                        justify-center font-bold text-xl">
+                R
+            </div>
+
+            <div>
+                <h1 class="font-bold">Portal Siswa RPL</h1>
+                <p class="text-xs text-slate-500">
+                    SMK ICB Cinta Niaga
+                </p>
+            </div>
+
+        </a>
+
+        <nav class="hidden md:flex gap-7">
+            <a href="index.html" class="hover:text-blue-600">
+                Beranda
+            </a>
+
+            <a href="tugas.html" class="hover:text-blue-600">
+                Tugas
+            </a>
+
+            <a href="nilai.html"
+               class="text-blue-600 font-semibold">
+                Nilai
+            </a>
+        </nav>
+
+        <a href="login.html"
+           class="bg-blue-600 text-white px-5 py-2.5
+                  rounded-xl font-semibold">
+            Login
+        </a>
+
+    </div>
+</header>
+
+
+<main class="max-w-7xl mx-auto px-6 py-8">
+
+    <p class="text-blue-600 font-semibold">AKADEMIK</p>
+
+    <h1 class="text-3xl font-bold mt-1">
+        Nilai Siswa
+    </h1>
+
+    <p class="text-slate-500 mt-2">
+        Lihat perkembangan nilai pembelajaran kamu.
+    </p>
+
+
+    <!-- RINGKASAN -->
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-5 mt-8">
+
+        <div class="bg-white rounded-2xl border p-6">
+            <p class="text-sm text-slate-500">
+                Rata-rata Nilai
+            </p>
+
+            <h2 class="text-4xl font-bold
+                       text-blue-600 mt-2">
+                86,5
+            </h2>
+
+            <p class="text-xs text-emerald-600 mt-2">
+                ↑ 4,2% dari semester sebelumnya
+            </p>
+        </div>
+
+
+        <div class="bg-white rounded-2xl border p-6">
+            <p class="text-sm text-slate-500">
+                Nilai Tertinggi
+            </p>
+
+            <h2 class="text-4xl font-bold
+                       text-emerald-600 mt-2">
+                92
+            </h2>
+
+            <p class="text-xs text-slate-500 mt-2">
+                Pemrograman Web
+            </p>
+        </div>
+
+
+        <div class="bg-white rounded-2xl border p-6">
+            <p class="text-sm text-slate-500">
+                Tugas Dinilai
+            </p>
+
+            <h2 class="text-4xl font-bold
+                       text-purple-600 mt-2">
+                10
+            </h2>
+
+            <p class="text-xs text-slate-500 mt-2">
+                Dari 12 tugas
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- NILAI -->
+    <section class="bg-white rounded-2xl border
+                    overflow-hidden mt-8">
+
+        <div class="p-6 border-b">
+            <h2 class="text-xl font-bold">
+                📊 Daftar Nilai
+            </h2>
+
+            <p class="text-sm text-slate-500">
+                Tahun Ajaran 2026
+            </p>
+        </div>
+
+
+        <div class="overflow-x-auto">
+
+            <table class="w-full text-sm">
+
+                <thead class="bg-slate-50">
+                    <tr>
+                        <th class="text-left p-4">No</th>
+                        <th class="text-left p-4">Mata Pelajaran</th>
+                        <th class="text-center p-4">Tugas</th>
+                        <th class="text-center p-4">UTS</th>
+                        <th class="text-center p-4">UAS</th>
+                        <th class="text-center p-4">Nilai</th>
+                        <th class="text-center p-4">Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr class="border-t">
+                        <td class="p-4">1</td>
+                        <td class="p-4 font-semibold">
+                            Pemrograman Web
+                        </td>
+                        <td class="p-4 text-center">90</td>
+                        <td class="p-4 text-center">88</td>
+                        <td class="p-4 text-center">92</td>
+                        <td class="p-4 text-center
+                                   font-bold text-blue-600">
+                            92
+                        </td>
+                        <td class="p-4 text-center">
+                            <span class="bg-emerald-100
+                                         text-emerald-700
+                                         px-3 py-1 rounded-full text-xs">
+                                Sangat Baik
+                            </span>
+                        </td>
+                    </tr>
+
+
+                    <tr class="border-t">
+                        <td class="p-4">2</td>
+                        <td class="p-4 font-semibold">
+                            Basis Data
+                        </td>
+                        <td class="p-4 text-center">86</td>
+                        <td class="p-4 text-center">84</td>
+                        <td class="p-4 text-center">88</td>
+                        <td class="p-4 text-center
+                                   font-bold text-blue-600">
+                            86
+                        </td>
+                        <td class="p-4 text-center">
+                            <span class="bg-blue-100 text-blue-700
+                                         px-3 py-1 rounded-full text-xs">
+                                Baik
+                            </span>
+                        </td>
+                    </tr>
+
+
+                    <tr class="border-t">
+                        <td class="p-4">3</td>
+                        <td class="p-4 font-semibold">
+                            UI/UX Design
+                        </td>
+                        <td class="p-4 text-center">89</td>
+                        <td class="p-4 text-center">87</td>
+                        <td class="p-4 text-center">90</td>
+                        <td class="p-4 text-center
+                                   font-bold text-blue-600">
+                            89
+                        </td>
+                        <td class="p-4 text-center">
+                            <span class="bg-emerald-100
+                                         text-emerald-700
+                                         px-3 py-1 rounded-full text-xs">
+                                Sangat Baik
+                            </span>
+                        </td>
+                    </tr>
+
+
+                    <tr class="border-t">
+                        <td class="p-4">4</td>
+                        <td class="p-4 font-semibold">
+                            PBO
+                        </td>
+                        <td class="p-4 text-center">84</td>
+                        <td class="p-4 text-center">82</td>
+                        <td class="p-4 text-center">85</td>
+                        <td class="p-4 text-center
+                                   font-bold text-blue-600">
+                            84
+                        </td>
+                        <td class="p-4 text-center">
+                            <span class="bg-blue-100 text-blue-700
+                                         px-3 py-1 rounded-full text-xs">
+                                Baik
+                            </span>
+                        </td>
+                    </tr>
+
+
+                    <tr class="border-t">
+                        <td class="p-4">5</td>
+                        <td class="p-4 font-semibold">
+                            Pemodelan Perangkat Lunak
+                        </td>
+                        <td class="p-4 text-center">82</td>
+                        <td class="p-4 text-center">85</td>
+                        <td class="p-4 text-center">86</td>
+                        <td class="p-4 text-center
+                                   font-bold text-blue-600">
+                            84
+                        </td>
+                        <td class="p-4 text-center">
+                            <span class="bg-blue-100 text-blue-700
+                                         px-3 py-1 rounded-full text-xs">
+                                Baik
+                            </span>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+    </section>
+
+
+    <!-- PROGRESS -->
+    <section class="bg-white rounded-2xl border
+                    p-6 mt-6">
+
+        <h2 class="text-xl font-bold">
+            📈 Perkembangan Akademik
+        </h2>
+
+        <div class="mt-6">
+
+            <div class="flex justify-between mb-2">
+                <span class="text-sm">
+                    Target Nilai Semester
+                </span>
+
+                <b>86 / 90</b>
+            </div>
+
+            <div class="h-3 bg-slate-200 rounded-full">
+                <div class="h-3 bg-blue-600 rounded-full"
+                     style="width:86%">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer class="text-center py-10">
+        <p class="font-semibold">Portal Siswa RPL</p>
+        <p class="text-sm text-slate-500">
+            SMK ICB Cinta Niaga
+        </p>
+        <p class="text-xs text-slate-400 mt-2">
+            © 2026 Portal Siswa RPL
+        </p>
+    </footer>
+
+</main>
+</body>
+</html>

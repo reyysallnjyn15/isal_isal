@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Siswa RPL - Tugas</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body class="bg-slate-100 text-slate-800">
+
+<header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4
+                flex items-center justify-between">
+
+        <a href="index.html" class="flex items-center gap-3">
+            <div class="w-11 h-11 rounded-xl bg-blue-600
+                        text-white flex items-center
+                        justify-center font-bold text-xl">
+                R
+            </div>
+
+            <div>
+                <h1 class="font-bold">Portal Siswa RPL</h1>
+                <p class="text-xs text-slate-500">
+                    SMK ICB Cinta Niaga
+                </p>
+            </div>
+        </a>
+
+        <nav class="hidden md:flex gap-7">
+            <a href="index.html" class="hover:text-blue-600">
+                Beranda
+            </a>
+
+            <a href="tugas.html"
+               class="text-blue-600 font-semibold">
+                Tugas
+            </a>
+
+            <a href="nilai.html" class="hover:text-blue-600">
+                Nilai
+            </a>
+        </nav>
+
+        <a href="login.html"
+           class="bg-blue-600 text-white px-5 py-2.5
+                  rounded-xl font-semibold hover:bg-blue-700">
+            Login
+        </a>
+    </div>
+</header>
+
+
+<main class="max-w-7xl mx-auto px-6 py-8">
+
+    <div class="mb-8">
+        <p class="text-blue-600 font-semibold">AKADEMIK</p>
+        <h1 class="text-3xl font-bold mt-1">
+            Daftar Tugas
+        </h1>
+
+        <p class="text-slate-500 mt-2">
+            Kelola dan pantau semua tugas pembelajaran kamu.
+        </p>
+    </div>
+
+
+    <!-- STATISTIK -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+
+        <div class="bg-white rounded-2xl p-5 border">
+            <p class="text-sm text-slate-500">Semua</p>
+            <h2 class="text-3xl font-bold mt-2">12</h2>
+        </div>
+
+        <div class="bg-white rounded-2xl p-5 border">
+            <p class="text-sm text-orange-500">Belum</p>
+            <h2 class="text-3xl font-bold text-orange-500 mt-2">
+                4
+            </h2>
+        </div>
+
+        <div class="bg-white rounded-2xl p-5 border">
+            <p class="text-sm text-yellow-600">Dinilai</p>
+            <h2 class="text-3xl font-bold text-yellow-500 mt-2">
+                2
+            </h2>
+        </div>
+
+        <div class="bg-white rounded-2xl p-5 border">
+            <p class="text-sm text-emerald-600">Selesai</p>
+            <h2 class="text-3xl font-bold text-emerald-500 mt-2">
+                8
+            </h2>
+        </div>
+
+    </div>
+
+
+    <!-- FILTER -->
+    <div class="bg-white rounded-2xl border p-5 mb-6">
+
+        <div class="flex flex-wrap gap-3">
+
+            <a href="#semua"
+               class="bg-blue-600 text-white
+                      px-5 py-2.5 rounded-full">
+                Semua
+            </a>
+
+            <a href="#belum"
+               class="bg-slate-100 px-5 py-2.5 rounded-full
+                      hover:bg-slate-200">
+                Belum Dikerjakan
+            </a>
+
+            <a href="#dinilai"
+               class="bg-slate-100 px-5 py-2.5 rounded-full
+                      hover:bg-slate-200">
+                Sedang Dinilai
+            </a>
+
+            <a href="#selesai"
+               class="bg-slate-100 px-5 py-2.5 rounded-full
+                      hover:bg-slate-200">
+                Selesai
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- DAFTAR -->
+    <div class="space-y-4">
+
+
+        <!-- PEMROGRAMAN -->
+        <article id="pemrograman"
+                 class="bg-white rounded-2xl border p-6">
+
+            <div class="flex flex-col md:flex-row
+                        justify-between gap-5">
+
+                <div class="flex gap-4">
+
+                    <div class="w-14 h-14 bg-blue-100
+                                rounded-xl flex items-center
+                                justify-center text-2xl">
+                        💻
+                    </div>
+
+                    <div>
+                        <span class="text-xs text-blue-600 font-semibold">
+                            PEMROGRAMAN WEB
+                        </span>
+
+                        <h2 class="text-xl font-bold mt-1">
+                            Membuat Website Tailwind CSS
+                        </h2>
+
+                        <p class="text-sm text-slate-500 mt-2">
+                            Membuat halaman website responsif
+                            menggunakan Tailwind CSS.
+                        </p>
+
+                        <p class="text-sm text-slate-500 mt-3">
+                            📅 Deadline: 25 September 2026
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col items-start md:items-end gap-3">
+
+                    <span class="bg-orange-100 text-orange-700
+                                 px-3 py-1.5 rounded-full text-xs">
+                        Belum Dikerjakan
+                    </span>
+
+                    <button
+                        onclick="alert('Halaman pengumpulan tugas akan dibuka.')"
+                        class="bg-blue-600 text-white
+                               px-5 py-2.5 rounded-xl
+                               hover:bg-blue-700">
+                        Kumpulkan Tugas
+                    </button>
+
+                </div>
+
+            </div>
+        </article>
+
+
+        <!-- UIUX -->
+        <article id="uiux"
+                 class="bg-white rounded-2xl border p-6">
+
+            <div class="flex flex-col md:flex-row
+                        justify-between gap-5">
+
+                <div class="flex gap-4">
+
+                    <div class="w-14 h-14 bg-purple-100
+                                rounded-xl flex items-center
+                                justify-center text-2xl">
+                        🎨
+                    </div>
+
+                    <div>
+                        <span class="text-xs text-purple-600 font-semibold">
+                            UI/UX DESIGN
+                        </span>
+
+                        <h2 class="text-xl font-bold mt-1">
+                            Desain Dashboard Aplikasi
+                        </h2>
+
+                        <p class="text-sm text-slate-500 mt-2">
+                            Membuat desain dashboard aplikasi
+                            siswa menggunakan Figma.
+                        </p>
+
+                        <p class="text-sm text-slate-500 mt-3">
+                            📅 Deadline: 28 September 2026
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col items-start md:items-end gap-3">
+
+                    <span class="bg-yellow-100 text-yellow-700
+                                 px-3 py-1.5 rounded-full text-xs">
+                        Sedang Dinilai
+                    </span>
+
+                    <button
+                        onclick="alert('Tugas sedang diperiksa oleh guru.')"
+                        class="bg-yellow-500 text-white
+                               px-5 py-2.5 rounded-xl">
+                        Lihat Status
+                    </button>
+
+                </div>
+
+            </div>
+        </article>
+
+
+        <!-- BASIS DATA -->
+        <article id="basisdata"
+                 class="bg-white rounded-2xl border p-6">
+
+            <div class="flex flex-col md:flex-row
+                        justify-between gap-5">
+
+                <div class="flex gap-4">
+
+                    <div class="w-14 h-14 bg-emerald-100
+                                rounded-xl flex items-center
+                                justify-center text-2xl">
+                        🗄️
+                    </div>
+
+                    <div>
+                        <span class="text-xs text-emerald-600 font-semibold">
+                            BASIS DATA
+                        </span>
+
+                        <h2 class="text-xl font-bold mt-1">
+                            Membuat ERD Sistem Informasi
+                        </h2>
+
+                        <p class="text-sm text-slate-500 mt-2">
+                            Membuat Entity Relationship Diagram
+                            untuk sistem informasi.
+                        </p>
+
+                        <p class="text-sm text-slate-500 mt-3">
+                            📅 Dikumpulkan: 22 September 2026
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col items-start md:items-end gap-3">
+
+                    <span class="bg-emerald-100 text-emerald-700
+                                 px-3 py-1.5 rounded-full text-xs">
+                        Selesai
+                    </span>
+
+                    <a href="nilai.html"
+                       class="bg-emerald-600 text-white
+                              px-5 py-2.5 rounded-xl
+                              hover:bg-emerald-700">
+                        Lihat Nilai
+                    </a>
+
+                </div>
+
+            </div>
+        </article>
+
+
+        <!-- TUGAS TAMBAHAN -->
+        <article id="belum"
+                 class="bg-white rounded-2xl border p-6">
+
+            <div class="flex items-center gap-4">
+
+                <div class="w-14 h-14 bg-orange-100
+                            rounded-xl flex items-center
+                            justify-center text-2xl">
+                    🧩
+                </div>
+
+                <div class="flex-1">
+                    <span class="text-xs text-orange-600 font-semibold">
+                        PEMODELAN PERANGKAT LUNAK
+                    </span>
+
+                    <h2 class="font-bold text-lg">
+                        Membuat Diagram UML
+                    </h2>
+
+                    <p class="text-sm text-slate-500">
+                        Membuat use case dan activity diagram.
+                    </p>
+                </div>
+
+                <span class="hidden sm:block bg-orange-100
+                             text-orange-700 px-3 py-1.5
+                             rounded-full text-xs">
+                    Belum
+                </span>
+
+            </div>
+        </article>
+
+
+        <article id="dinilai"
+                 class="bg-white rounded-2xl border p-6">
+
+            <div class="flex items-center gap-4">
+
+                <div class="w-14 h-14 bg-yellow-100
+                            rounded-xl flex items-center
+                            justify-center text-2xl">
+                    📝
+                </div>
+
+                <div class="flex-1">
+                    <span class="text-xs text-yellow-600 font-semibold">
+                        BAHASA INDONESIA
+                    </span>
+
+                    <h2 class="font-bold text-lg">
+                        Analisis Cerpen
+                    </h2>
+
+                    <p class="text-sm text-slate-500">
+                        Analisis unsur intrinsik dan amanat.
+                    </p>
+                </div>
+
+                <span class="hidden sm:block bg-yellow-100
+                             text-yellow-700 px-3 py-1.5
+                             rounded-full text-xs">
+                    Dinilai
+                </span>
+
+            </div>
+        </article>
+
+
+        <article id="selesai"
+                 class="bg-white rounded-2xl border p-6">
+
+            <div class="flex items-center gap-4">
+
+                <div class="w-14 h-14 bg-emerald-100
+                            rounded-xl flex items-center
+                            justify-center text-2xl">
+                    ✅
+                </div>
+
+                <div class="flex-1">
+                    <span class="text-xs text-emerald-600 font-semibold">
+                        PAI
+                    </span>
+
+                    <h2 class="font-bold text-lg">
+                        Materi Akidah dan Akhlak
+                    </h2>
+
+                    <p class="text-sm text-slate-500">
+                        Tugas telah berhasil dikumpulkan.
+                    </p>
+                </div>
+
+                <span class="hidden sm:block bg-emerald-100
+                             text-emerald-700 px-3 py-1.5
+                             rounded-full text-xs">
+                    Selesai
+                </span>
+
+            </div>
+        </article>
+
+    </div>
+
+
+    <footer class="text-center py-10">
+        <p class="font-semibold">Portal Siswa RPL</p>
+        <p class="text-sm text-slate-500">
+            SMK ICB Cinta Niaga
+        </p>
+        <p class="text-xs text-slate-400 mt-2">
+            © 2026 Portal Siswa RPL
+        </p>
+    </footer>
+
+</main>
+</body>
+</html>
